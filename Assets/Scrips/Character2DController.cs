@@ -7,6 +7,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Character2DController : MonoBehaviour
 {
+    readonly object _lock = new object();
+    static Character2DController _instance;
+
+    public static  Character2DController Instance
+    {
+        get
+        {
+            return _instance;
+        }
+    }
+
+
     [SerializeField]
     float moveSpeed = 300.0F;
 
@@ -49,6 +61,18 @@ public class Character2DController : MonoBehaviour
 
      void Awake()
     {
+        if (_instance == null)
+        {
+            lock (_lock)
+            {
+                if (_instance == null)
+                {
+                    _instance = this;
+                }
+            }
+        }
+
+
         _rb = GetComponent<Rigidbody2D>();
         _gravityY = -Physics2D.gravity.y;
     }
