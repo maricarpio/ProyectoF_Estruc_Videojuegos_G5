@@ -18,10 +18,15 @@ public class Character2DController : MonoBehaviour
         }
     }
 
-
+    [Header("Movement")]
     [SerializeField]
     float moveSpeed = 300.0F;
 
+    [SerializeField]
+    bool isFacingRight = true;
+
+
+    [Header("Jump")]
     [SerializeField]
     float jumpForce = 140.0F;
 
@@ -31,18 +36,18 @@ public class Character2DController : MonoBehaviour
     [SerializeField]
     float fallMultiplier = 3.0F;
 
-    private Rigidbody2D _rb;
-
-    [SerializeField]
-    bool isFacingRight = true;
-
     [SerializeField]
     Transform groundCheck;
 
     [SerializeField]
     LayerMask groundMask;
 
+    [Header("Extras")]
+    [SerializeField]
+    Animator animator;
 
+
+    private Rigidbody2D _rb;
 
     float _inputMovimiento;
 
@@ -50,7 +55,7 @@ public class Character2DController : MonoBehaviour
 
     bool _isJumpPressed;
 
-    bool _isGrounded;
+    bool _isJumping;
 
     float _gravityY;
 
@@ -103,8 +108,8 @@ public class Character2DController : MonoBehaviour
 
         if (_isJumpPressed)
         {
-            _isGrounded = IsGrounded();
-            if (_isGrounded)
+            bool isGrounded = IsGrounded();
+            if (isGrounded)
             {
                 _rb.velocity += Vector2.up * jumpForce * Time.fixedDeltaTime;
             }
@@ -115,6 +120,8 @@ public class Character2DController : MonoBehaviour
         {
             _rb.velocity -= Vector2.up * _gravityY * fallMultiplier * Time.fixedDeltaTime;
         }
+
+        _isJumping = !IsGrounded();
     }
 
      bool IsGrounded()
@@ -127,8 +134,20 @@ public class Character2DController : MonoBehaviour
 
     void HandleMove()
     {
-        float velocityX = _inputMovimiento * moveSpeed *Time.fixedDeltaTime;
+        bool isMoving = animator.GetFloat("speed") > 0.01F;
 
+        if (isMoving!=_isMoving && !_isJumping) 
+        {
+            animator.SetFloat("speed",Mathf.Abs(_inputMovimiento));
+        }
+
+        bool isJumping = animator.GetBool("isJumping");
+        if (isJumping != _isJumping)
+        {
+            animator.SetBool("isJumping", _isJumping);
+        }
+
+        float velocityX = _inputMovimiento * moveSpeed *Time.fixedDeltaTime;
         _rb.velocity = new Vector2(velocityX, _rb.velocity.y);
     }
 

@@ -15223,14 +15223,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 300
-  jumpForce: 255
+  isFacingRight: 1
+  jumpForce: 252
   jumpGraceTime: 0.2
   fallMultiplier: 3
-  isFacingRight: 1
   groundCheck: {fileID: 1013083325}
   groundMask:
     serializedVersion: 2
     m_Bits: 64
+  animator: {fileID: 982507945}
 --- !u!50 &1719040103
 Rigidbody2D:
   serializedVersion: 4
