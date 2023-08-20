@@ -34,13 +34,30 @@ public class EnemyPatrol : MonoBehaviour
 
         if (Vector2.Distance(transform.position, currentPoint.position) < 0.5F && currentPoint == pointB.transform) 
         {
+            flip();
             currentPoint = pointA.transform;
 
         }
-        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5F && currentPoint == pointB.transform)
+        if (Vector2.Distance(transform.position, currentPoint.position) < 0.5F && currentPoint == pointA.transform)
         {
+            flip();
             currentPoint = pointB.transform;
 
         }
     }
+
+    private void flip() 
+    {
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1;
+        transform.localScale = localScale;
+    }
+
+    /*private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(pointA.transform.position, 0.5F);
+        Gizmos.DrawWireSphere(pointB.transform.position, 0.5F);
+        Gizmos.DrawLine(pointA.transform.position, pointB.transform.position);
+    }*/
+    
 }

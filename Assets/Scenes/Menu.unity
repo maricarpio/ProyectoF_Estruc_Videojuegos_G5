@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Knight's Adventure
+  m_text: Dungeon's Adventure
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c559681f381d34d4fa1fe986ace0a8de, type: 2}
   m_sharedMaterial: {fileID: -921270129093327066, guid: c559681f381d34d4fa1fe986ace0a8de, type: 2}

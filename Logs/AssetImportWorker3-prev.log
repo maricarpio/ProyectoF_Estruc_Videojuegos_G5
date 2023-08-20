@@ -1,0 +1,288 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'es' Physical Memory: 32699 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\maric\Downloads\2021.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/maric/Documents/GitHub/Proyecto_G5/Proyecto/ProyectoF_Estruc_Videojuegos_G5
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+57298
+Successfully changed project path to: C:/Users/maric/Documents/GitHub/Proyecto_G5/Proyecto/ProyectoF_Estruc_Videojuegos_G5
+C:/Users/maric/Documents/GitHub/Proyecto_G5/Proyecto/ProyectoF_Estruc_Videojuegos_G5
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8784] Host "[IP] 192.168.86.28 [Port] 0 [Flags] 2 [Guid] 3746918096 [EditorId] 3746918096 [Version] 1048832 [Id] WindowsEditor(7,Mari) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8784] Host "[IP] 192.168.86.28 [Port] 0 [Flags] 2 [Guid] 3746918096 [EditorId] 3746918096 [Version] 1048832 [Id] WindowsEditor(7,Mari) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 150.09 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
+[Subsystems] Discovering subsystems at path C:/Users/maric/Downloads/2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/maric/Documents/GitHub/Proyecto_G5/Proyecto/ProyectoF_Estruc_Videojuegos_G5/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 (ID=0x2504)
+    Vendor:   NVIDIA
+    VRAM:     12129 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'C:/Users/maric/Downloads/2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/maric/Downloads/2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/maric/Downloads/2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56404
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/maric/Downloads/2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007593 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 132.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.883 seconds
+Domain Reload Profiling:
+	ReloadAssembly (884ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (629ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (136ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (385ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (71ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.011178 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\maric\Documents\GitHub\Proyecto_G5\Proyecto\ProyectoF_Estruc_Videojuegos_G5\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\maric\Documents\GitHub\Proyecto_G5\Proyecto\ProyectoF_Estruc_Videojuegos_G5\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 136.70 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.845 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1846ms)
+		BeginReloadAssembly (163ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (1525ms)
+			LoadAssemblies (129ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (464ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (108ms)
+			SetupLoadedEditorAssemblies (713ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (137ms)
+				BeforeProcessingInitializeOnLoad (152ms)
+				ProcessInitializeOnLoadAttributes (343ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.07 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3785 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (56.1 KB). Loaded Objects now: 4245.
+Memory consumption went from 147.5 MB to 147.4 MB.
+Total: 4.033400 ms (FindLiveObjects: 0.432300 ms CreateObjectMapping: 0.116700 ms MarkObjects: 3.383900 ms  DeleteObjects: 0.098600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 498811.865328 seconds.
+  path: Assets/Sprites/Personajes/Fallen_Angels_1/PNG/PNG Sequences/Jump Start/0_Fallen_Angels_Jump Start_002.png
+  artifactKey: Guid(60fb54bbe9b625046a35636dd74029ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Fallen_Angels_1/PNG/PNG Sequences/Jump Start/0_Fallen_Angels_Jump Start_002.png using Guid(60fb54bbe9b625046a35636dd74029ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a24034c1318e73f2b17347fedb9896') in 0.255936 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.835394 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_000.png
+  artifactKey: Guid(b82d5eb86d5e79a4ea28ea2dcfbd4da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_000.png using Guid(b82d5eb86d5e79a4ea28ea2dcfbd4da8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d514f0f8ac437b0e17663a41dc07c1a') in 0.090504 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_007.png
+  artifactKey: Guid(b3a904c10c0bb644c81c5493e2c3e01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_007.png using Guid(b3a904c10c0bb644c81c5493e2c3e01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718454f3677a09bb640966dcb334d5f2') in 0.085643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_012.png
+  artifactKey: Guid(97efbbe484602bc4ea8737c351655483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_012.png using Guid(97efbbe484602bc4ea8737c351655483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e34c7bcd04471cf13efb601cc0d7e6de') in 0.080873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_021.png
+  artifactKey: Guid(5ee46afc897cf7f4c91390fcdf9ec8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_021.png using Guid(5ee46afc897cf7f4c91390fcdf9ec8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '926e7f5e240d15a87baf365d7206bbd3') in 0.080655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_019.png
+  artifactKey: Guid(b55e9345e7a978a4c89a91e0c2c50cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_019.png using Guid(b55e9345e7a978a4c89a91e0c2c50cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0956488969c56807366748de854660d6') in 0.091260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_004.png
+  artifactKey: Guid(e5de87041531147458eba35b241feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_004.png using Guid(e5de87041531147458eba35b241feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4896641b16614f95f55f0ccc17c1d01a') in 0.088643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_018.png
+  artifactKey: Guid(c99e2b8786d362c49b7ebdab065d61ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_018.png using Guid(c99e2b8786d362c49b7ebdab065d61ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4693b57ae75fdf790b6372800a183bf4') in 0.077081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_005.png
+  artifactKey: Guid(398bfdebd8b1a8d498d96029c2ec41f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_005.png using Guid(398bfdebd8b1a8d498d96029c2ec41f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cbd27b562500d4d9fdbbd76fd90b3a3') in 0.088306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_001.png
+  artifactKey: Guid(4929244c7b5c80a44a57a61cc1dffe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_001.png using Guid(4929244c7b5c80a44a57a61cc1dffe54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d28977fa8741dd0b12d2adc970517ec') in 0.091255 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_023.png
+  artifactKey: Guid(94c2b0c3f023f4043914cbee4ed98bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_023.png using Guid(94c2b0c3f023f4043914cbee4ed98bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54d37f7dffeadadf6581fe620126907') in 0.079031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_020.png
+  artifactKey: Guid(5dd2ffbbdc113bd46b2d62ed10efbc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_020.png using Guid(5dd2ffbbdc113bd46b2d62ed10efbc75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae8676eb134d7d0ddd330e8917c6a80') in 0.087237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.041492 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_002.png
+  artifactKey: Guid(4e1d59624b06d664785472f6cbe54089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_002.png using Guid(4e1d59624b06d664785472f6cbe54089) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba1b0ab0cfe2bdb8021822f90aef014') in 0.095976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_003.png
+  artifactKey: Guid(48c5ec1302da69242b833fa2f29d5a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_003.png using Guid(48c5ec1302da69242b833fa2f29d5a15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9271755f77f58209a699794cbbbecfc8') in 0.086314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_012.png
+  artifactKey: Guid(97efbbe484602bc4ea8737c351655483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_012.png using Guid(97efbbe484602bc4ea8737c351655483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db5eb4df8c1ccef8884f8bed71d8803') in 0.085202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_009.png
+  artifactKey: Guid(062a67a0877f96245bd6b496e33d53c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_009.png using Guid(062a67a0877f96245bd6b496e33d53c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d24cbcce2e1c78498559d3a91ac44cf') in 0.080567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_004.png
+  artifactKey: Guid(e5de87041531147458eba35b241feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_004.png using Guid(e5de87041531147458eba35b241feda7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0edc4c5a1d0ae4d5dd527aeac8bdcb02') in 0.076592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_015.png
+  artifactKey: Guid(1d99df0f51b63b645a0ca538b682b310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_015.png using Guid(1d99df0f51b63b645a0ca538b682b310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7b4844735f5464f6875cde2d31ffd2') in 0.082761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_010.png
+  artifactKey: Guid(b2e5ad7d098b56849b8640ee483255e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_010.png using Guid(b2e5ad7d098b56849b8640ee483255e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d87d8bcd5d6554a0bc816541140ef6') in 0.080238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_014.png
+  artifactKey: Guid(845d9d9dcce5f04499d120495431fef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Personajes/Orc/Walking/0_Orc_Walking_014.png using Guid(845d9d9dcce5f04499d120495431fef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcb5873b5b0a8d841a15a5f0f3579e7f') in 0.083735 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
