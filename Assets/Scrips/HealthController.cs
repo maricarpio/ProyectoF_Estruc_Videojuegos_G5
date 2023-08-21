@@ -1,14 +1,42 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthController : MonoBehaviour
 {
-    [SerializeField]
-    float health = 100.0F;
+    public GameObject[] hearts;
+    private int life;
 
-    public event EventHandler MuerteJugador;
+    public Animator animator;
+
+    public float health { get; private set; }
+
+    private void Start()
+    {
+        life = hearts.Length;
+    }
+
+    public void Update()
+    {
+        if (life < 1)
+        {
+            Destroy(hearts[0].gameObject);
+            animator.Play("hit");
+
+        }
+
+        else if (life < 2)
+        {
+            Destroy(hearts[1].gameObject);
+            animator.Play("hit");
+        }
+        else if (life < 3)
+        {
+            Destroy(hearts[2].gameObject);
+            animator.Play("hit");
+
+        }
+    }
 
     public void TakeDamage(float damage)
     {
@@ -16,10 +44,20 @@ public class HealthController : MonoBehaviour
 
         if (health <= 0)
         {
-            MuerteJugador?.Invoke(this,EventArgs.Empty);
             Destroy(gameObject);
 
         }
     }
 
+    public void PlayerDamage()
+    {
+        life--;
+    }
 }
+
+ 
+
+    
+
+
+   
