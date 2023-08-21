@@ -12,7 +12,7 @@ public class GameManager
 
     private GameManager()
     {
-        // Constructor privado para evitar instanciación externa
+        // Constructor privado para evitar instanciaciï¿½n externa
         Score = 0;
         IsPaused = false;
     }
@@ -32,12 +32,12 @@ public class GameManager
     public void PauseGame()
     {
         IsPaused = true;
-        // Lógica para pausar el juego
+        // Lï¿½gica para pausar el juego
     }
 
     public void ResumeGame()
     {
         IsPaused = false;
-        // Lógica para reanudar el juego
+        // Lï¿½gica para reanudar el juego
     }
 }

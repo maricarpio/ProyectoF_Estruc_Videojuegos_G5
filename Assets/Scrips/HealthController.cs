@@ -1,3 +1,4 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,6 +9,10 @@ public class HealthController : MonoBehaviour
     private int life;
 
     public Animator animator;
+
+    [SerializeField]
+    private int vida;
+    public event EventHandler MuerteJugador;
 
     public float health { get; private set; }
 
@@ -44,6 +49,7 @@ public class HealthController : MonoBehaviour
 
         if (health <= 0)
         {
+            MuerteJugador?.Invoke(this, EventArgs.Empty);
             Destroy(gameObject);
 
         }
@@ -53,6 +59,8 @@ public class HealthController : MonoBehaviour
     {
         life--;
     }
+
+
 }
 
  

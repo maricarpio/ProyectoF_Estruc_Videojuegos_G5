@@ -7,9 +7,6 @@ public class EnemyTouchController : MonoBehaviour
     [SerializeField]
     float damage = 25.0F;
 
-
-
-
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))
