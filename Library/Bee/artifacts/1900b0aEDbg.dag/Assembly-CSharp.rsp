@@ -373,6 +373,7 @@
 "Assets/Scrips/CameraFollower.cs"
 "Assets/Scrips/Character2DController.cs"
 "Assets/Scrips/EnemyPatrol.cs"
+"Assets/Scrips/EnemyTouchController.cs"
 "Assets/Scrips/EventController.cs"
 "Assets/Scrips/HealthController.cs"
 "Assets/Scrips/MeleeController.cs"

@@ -46,6 +46,12 @@ public class Character2DController : MonoBehaviour
     [SerializeField]
     Animator animator;
 
+    [SerializeField]
+    Vector2 reboundSpeed;
+
+    [SerializeField]
+    float lostControlLifeTime = 1.0F;
+
 
     private Rigidbody2D _rb;
 
@@ -56,6 +62,8 @@ public class Character2DController : MonoBehaviour
     bool _isJumpPressed;
 
     bool _isJumping;
+
+    bool _canMove = true;
 
     float _gravityY;
 
@@ -148,7 +156,12 @@ public class Character2DController : MonoBehaviour
         }
 
         float velocityX = _inputMovimiento * moveSpeed *Time.fixedDeltaTime;
-        _rb.velocity = new Vector2(velocityX, _rb.velocity.y);
+
+        if (_canMove)
+        {
+            _rb.velocity = new Vector2(velocityX, _rb.velocity.y);
+        }
+
     }
 
     void ProcesarMovimiento()
@@ -173,6 +186,23 @@ public class Character2DController : MonoBehaviour
             isFacingRight = !isFacingRight;
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
+    }
+
+    public void Rebound(Vector2 contactPoint)
+    {
+        _rb.velocity = new Vector2(-reboundSpeed.x * contactPoint.x, reboundSpeed.y);
+        StartCoroutine(LoseControl());
+    }
+
+    IEnumerator LoseControl()
+    {
+        animator.SetTrigger("getHit");
+
+        _canMove = false;
+        yield return new WaitForSeconds(lostControlLifeTime);
+        _canMove = true;
+
+        animator.ResetTrigger("getHit");
     }
   
 }

@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 116015062}
   - component: {fileID: 116015061}
   - component: {fileID: 116015066}
+  - component: {fileID: 116015067}
   m_Layer: 0
   m_Name: Patrol2
   m_TagString: Untagged
@@ -376,6 +377,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &116015067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116015059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &118269956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11245,7 +11259,7 @@ Transform:
   - {fileID: 1133494593}
   - {fileID: 241709594}
   m_Father: {fileID: 826039910}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317159413
 GameObject:
@@ -11804,7 +11818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492737527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.997265, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.996527, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11826,7 +11840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 1424761961}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1 &521112818
@@ -12072,7 +12086,8 @@ GameObject:
   - component: {fileID: 640410532}
   - component: {fileID: 640410533}
   - component: {fileID: 640410534}
-  m_Layer: 0
+  - component: {fileID: 640410535}
+  m_Layer: 7
   m_Name: Patrol1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12121,6 +12136,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &640410535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640410531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &719027899
 GameObject:
   m_ObjectHideFlags: 0
@@ -12271,6 +12299,7 @@ GameObject:
   - component: {fileID: 733959651}
   - component: {fileID: 733959650}
   - component: {fileID: 733959655}
+  - component: {fileID: 733959656}
   m_Layer: 0
   m_Name: Patrol2
   m_TagString: Untagged
@@ -12441,6 +12470,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &733959656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733959648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &741571262
 GameObject:
   m_ObjectHideFlags: 0
@@ -12662,7 +12704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799255443}
   - component: {fileID: 799255444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Patrol3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12726,7 +12768,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1424761960}
   - {fileID: 1281982466}
   - {fileID: 299220273}
   m_Father: {fileID: 0}
@@ -13261,7 +13302,7 @@ GameObject:
   - component: {fileID: 1215631737}
   - component: {fileID: 1215631739}
   - component: {fileID: 1215631740}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Aggro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13356,7 +13397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238693970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.997265, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.996527, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13574,7 +13615,7 @@ Transform:
   - {fileID: 871340313}
   - {fileID: 1357800420}
   m_Father: {fileID: 826039910}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286773994
 GameObject:
@@ -13820,7 +13861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1298252708}
   - component: {fileID: 1298252709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Patrol4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13955,6 +13996,7 @@ GameObject:
   - component: {fileID: 1365062148}
   - component: {fileID: 1365062150}
   - component: {fileID: 1365062151}
+  - component: {fileID: 1365062152}
   m_Layer: 0
   m_Name: Patrol1
   m_TagString: Untagged
@@ -14125,6 +14167,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1365062152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365062144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &1388408156
 GameObject:
   m_ObjectHideFlags: 0
@@ -14259,67 +14314,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388408156}
   m_CullTransparentMesh: 1
---- !u!1 &1424761959
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1424761960}
-  - component: {fileID: 1424761961}
-  m_Layer: 2
-  m_Name: Edge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1424761960
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424761959}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 826039910}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1424761961
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1424761959}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -24.550991, y: 24.072742}
-      - {x: -24.511023, y: -22.520658}
-      - {x: 126.49531, y: -22.51758}
-      - {x: 126.71057, y: 23.948462}
 --- !u!1 &1460961179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14682,6 +14676,7 @@ GameObject:
   - component: {fileID: 1568595993}
   - component: {fileID: 1568595992}
   - component: {fileID: 1568595994}
+  - component: {fileID: 1568595995}
   m_Layer: 0
   m_Name: Avatar
   m_TagString: Untagged
@@ -14852,6 +14847,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1568595995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568595987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &1584357670
 GameObject:
   m_ObjectHideFlags: 0
@@ -14955,6 +14963,7 @@ GameObject:
   - component: {fileID: 1648404665}
   - component: {fileID: 1648404664}
   - component: {fileID: 1648404669}
+  - component: {fileID: 1648404670}
   m_Layer: 0
   m_Name: Patrol2
   m_TagString: Untagged
@@ -15125,6 +15134,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1648404670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648404662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
 --- !u!1 &1710792379
 GameObject:
   m_ObjectHideFlags: 0
@@ -15232,6 +15254,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   animator: {fileID: 982507945}
+  reboundSpeed: {x: 5, y: 5}
+  lostControlLifeTime: 1
 --- !u!50 &1719040103
 Rigidbody2D:
   serializedVersion: 4
@@ -15695,7 +15719,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2141581911}
   - component: {fileID: 2141581912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Patrol2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
