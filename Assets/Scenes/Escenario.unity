@@ -391,7 +391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &118269956
 GameObject:
   m_ObjectHideFlags: 0
@@ -11898,8 +11899,8 @@ RectTransform:
   m_GameObject: {fileID: 457855366}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1819003899}
   m_RootOrder: 0
@@ -11929,7 +11930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3b7d42b627343e4e8a9a3c10fa12745, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6c11e4db738640468ed8ed2bb911d8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12145,7 +12146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492737527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.999999, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.992828, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12412,7 +12413,6 @@ GameObject:
   m_Component:
   - component: {fileID: 640410532}
   - component: {fileID: 640410533}
-  - component: {fileID: 640410534}
   - component: {fileID: 640410535}
   m_Layer: 7
   m_Name: Patrol1
@@ -12450,21 +12450,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
---- !u!114 &640410534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640410531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c864116a90651bf40a8876715ffa358e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  animator: {fileID: 0}
-  vida: 0
 --- !u!114 &640410535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12477,7 +12462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &719027899
 GameObject:
   m_ObjectHideFlags: 0
@@ -12813,7 +12799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 2
+  playerHealth: {fileID: 0}
 --- !u!1 &741571262
 GameObject:
   m_ObjectHideFlags: 0
@@ -13405,7 +13392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 2
+  playerHealth: {fileID: 0}
 --- !u!114 &913649641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14220,7 +14208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 2
+  playerHealth: {fileID: 0}
 --- !u!114 &1234190133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14393,7 +14382,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238693970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.999999, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.992828, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15101,7 +15090,6 @@ GameObject:
   - component: {fileID: 1365062149}
   - component: {fileID: 1365062148}
   - component: {fileID: 1365062150}
-  - component: {fileID: 1365062151}
   - component: {fileID: 1365062152}
   m_Layer: 0
   m_Name: Patrol1
@@ -15260,21 +15248,6 @@ MonoBehaviour:
   pointA: {fileID: 1030642192}
   pointB: {fileID: 266138257}
   speed: 2
---- !u!114 &1365062151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1365062144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c864116a90651bf40a8876715ffa358e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts: []
-  animator: {fileID: 0}
-  vida: 0
 --- !u!114 &1365062152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15287,7 +15260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &1366213312
 GameObject:
   m_ObjectHideFlags: 0
@@ -16002,15 +15976,15 @@ RectTransform:
   m_GameObject: {fileID: 1522806625}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1819003899}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60, y: 0}
+  m_AnchoredPosition: {x: 62, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1522806627
@@ -16033,7 +16007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3b7d42b627343e4e8a9a3c10fa12745, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6c11e4db738640468ed8ed2bb911d8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16236,7 +16210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 2
+  playerHealth: {fileID: 0}
 --- !u!114 &1568595996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16809,7 +16784,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 2
+  playerHealth: {fileID: 0}
 --- !u!1 &1689499825
 GameObject:
   m_ObjectHideFlags: 0
@@ -16837,15 +16813,15 @@ RectTransform:
   m_GameObject: {fileID: 1689499825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.66, y: 0.66, z: 0.66}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1819003899}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125.7, y: 0}
+  m_AnchoredPosition: {x: 122, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1689499827
@@ -16868,7 +16844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f3b7d42b627343e4e8a9a3c10fa12745, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6c11e4db738640468ed8ed2bb911d8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16946,6 +16922,8 @@ GameObject:
   - component: {fileID: 1719040105}
   - component: {fileID: 1719040106}
   - component: {fileID: 1719040107}
+  - component: {fileID: 1719040108}
+  - component: {fileID: 1719040109}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -17090,6 +17068,43 @@ MonoBehaviour:
   onAttack:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1719040108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719040100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a28a5edf1d7ec1245ae460745cdac3df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  maxHealth: 3
+  playerSr: {fileID: 982507940}
+  playerMovement: {fileID: 1719040102}
+--- !u!114 &1719040109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719040100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1f7cbbc9c2a30448009f11a39a5498, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 3
+  maxHealth: 3
+  emptyHeart: {fileID: 21300000, guid: 6c2db49ee9d9fd34b9ddc34f40b350e0, type: 3}
+  fullHeart: {fileID: 21300000, guid: b6c11e4db738640468ed8ed2bb911d8c, type: 3}
+  hearts:
+  - {fileID: 457855368}
+  - {fileID: 1522806627}
+  - {fileID: 1689499827}
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &1755111349
 GameObject:
   m_ObjectHideFlags: 0
@@ -17338,7 +17353,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -599.8, y: 317}
+  m_AnchoredPosition: {x: -589, y: 304}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1879106812
@@ -17843,6 +17858,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2141581911}
   - component: {fileID: 2141581912}
+  - component: {fileID: 2141581913}
   m_Layer: 7
   m_Name: Patrol2
   m_TagString: Untagged
@@ -17879,3 +17895,17 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
+--- !u!114 &2141581913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141581910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerHealth: {fileID: 1719040108}

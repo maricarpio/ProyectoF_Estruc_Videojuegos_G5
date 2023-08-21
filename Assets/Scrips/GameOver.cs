@@ -8,10 +8,10 @@ public class GameOver : MonoBehaviour
 {
     [SerializeField]
     private GameObject gameOver;
-    private HealthController healthController;
+    private PlayerHealth healthController;
     private void Start()
     {
-        healthController = GameObject.FindGameObjectWithTag("Player").GetComponent<HealthController>();
+        healthController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
         healthController.MuerteJugador += ActivarMenu;
     }
 

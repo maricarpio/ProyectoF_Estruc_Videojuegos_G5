@@ -23,24 +23,21 @@ public class HealthController : MonoBehaviour
 
     public void Update()
     {
-        if (life < 1)
-        {
-            Destroy(hearts[0].gameObject);
-            animator.Play("hit");
-
-        }
-
-        else if (life < 2)
-        {
-            Destroy(hearts[1].gameObject);
-            animator.Play("hit");
-        }
-        else if (life < 3)
-        {
-            Destroy(hearts[2].gameObject);
-            animator.Play("hit");
-
-        }
+        //if (life < 1 && hearts.Length > 0)
+        //{
+        //    Destroy(hearts[0].gameObject);
+        //    animator.Play("hit");
+        //}
+        //else if (life < 2 && hearts.Length > 1)
+        //{
+        //    Destroy(hearts[1].gameObject);
+        //    animator.Play("hit");
+        //}
+        //else if (life < 3 && hearts.Length > 2)
+        //{
+        //    Destroy(hearts[2].gameObject);
+        //    animator.Play("hit");
+        //}
     }
 
     public void TakeDamage(float damage)
