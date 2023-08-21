@@ -373,6 +373,7 @@
 "Assets/Scrips/BulletController.cs"
 "Assets/Scrips/CameraFollower.cs"
 "Assets/Scrips/Character2DController.cs"
+"Assets/Scrips/ColisionInferior.cs"
 "Assets/Scrips/EnemyPatrol.cs"
 "Assets/Scrips/EnemyTouchController.cs"
 "Assets/Scrips/EventController.cs"

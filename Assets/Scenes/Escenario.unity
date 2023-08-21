@@ -12146,7 +12146,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492737527}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.993013, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.997391, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12799,8 +12799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 0}
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &741571262
 GameObject:
   m_ObjectHideFlags: 0
@@ -13392,8 +13392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 0}
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!114 &913649641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13709,6 +13709,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 640410532}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1049504181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049504182}
+  m_Layer: 3
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1049504182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049504181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.95, y: -0.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1719040101}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071029264
 GameObject:
@@ -14279,8 +14310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 0}
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!114 &1234190133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14453,7 +14484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238693970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.993013, y: -4.1760006, z: -10.045912}
+  m_LocalPosition: {x: -12.997391, y: -4.1760006, z: -10.045912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15162,6 +15193,7 @@ GameObject:
   - component: {fileID: 1365062148}
   - component: {fileID: 1365062150}
   - component: {fileID: 1365062152}
+  - component: {fileID: 1365062153}
   m_Layer: 0
   m_Name: Patrol1
   m_TagString: Untagged
@@ -15333,6 +15365,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   playerHealth: {fileID: 1719040108}
+--- !u!114 &1365062153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365062144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c864116a90651bf40a8876715ffa358e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hearts: []
+  animator: {fileID: 0}
+  vida: 0
 --- !u!1 &1366213312
 GameObject:
   m_ObjectHideFlags: 0
@@ -16281,8 +16328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 30
-  playerHealth: {fileID: 0}
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!114 &1568595996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16855,8 +16902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9e71bbb72f53547988ac117bdb8eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
-  playerHealth: {fileID: 0}
+  damage: 1
+  playerHealth: {fileID: 1719040108}
 --- !u!1 &1689499825
 GameObject:
   m_ObjectHideFlags: 0
@@ -16990,12 +17037,12 @@ GameObject:
   - component: {fileID: 1719040103}
   - component: {fileID: 1719040102}
   - component: {fileID: 1719040104}
-  - component: {fileID: 1719040105}
   - component: {fileID: 1719040106}
   - component: {fileID: 1719040107}
   - component: {fileID: 1719040108}
   - component: {fileID: 1719040109}
   - component: {fileID: 1719040110}
+  - component: {fileID: 1719040111}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -17018,6 +17065,7 @@ Transform:
   - {fileID: 982507941}
   - {fileID: 1013083325}
   - {fileID: 317159414}
+  - {fileID: 1049504182}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17093,24 +17141,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.78391075, y: 1.7985678}
   m_EdgeRadius: 0
---- !u!114 &1719040105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1719040100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c864116a90651bf40a8876715ffa358e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hearts:
-  - {fileID: 457855366}
-  - {fileID: 1522806625}
-  - {fileID: 1689499825}
-  animator: {fileID: 0}
-  vida: 0
 --- !u!210 &1719040106
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -17274,6 +17304,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1719040111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719040100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123e4b639611e46449ed3bed2a3cbe78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1049504182}
+  bulletPrefab: {fileID: 8071424113465583153, guid: 771f85954f7c6e04ba0cbabbbbee4037, type: 3}
+  bulletSpeed: 1500
+  bulletLifeTime: 3
+  fireRate: 3
+  animator: {fileID: 982507945}
+  onFire:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1755111349
 GameObject:
   m_ObjectHideFlags: 0
