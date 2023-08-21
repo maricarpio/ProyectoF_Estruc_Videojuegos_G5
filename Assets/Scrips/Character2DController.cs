@@ -52,8 +52,12 @@ public class Character2DController : MonoBehaviour
     [SerializeField]
     float lostControlLifeTime = 1.0F;
 
-
+    //caida al vacio
     float xInicial,yInicial;
+
+    //Audio Jump
+    [SerializeField]
+    private AudioSource jumpSoundEffect;
     
 
     private Rigidbody2D _rb;
@@ -114,6 +118,7 @@ public class Character2DController : MonoBehaviour
         if(_lastTimeJumpPressed > 0.0F && Time.time - _lastTimeJumpPressed <= jumpGraceTime)
         {
             _isJumpPressed = true;
+            
         }
         else
         {
@@ -127,6 +132,7 @@ public class Character2DController : MonoBehaviour
             if (isGrounded)
             {
                 _rb.velocity += Vector2.up * jumpForce * Time.fixedDeltaTime;
+                jumpSoundEffect.Play();
             }
             
         }
