@@ -8,32 +8,54 @@ public class PauseController : MonoBehaviour
     [SerializeField]
     GameObject pausePanel;
 
-    [SerializeField]
-    GameObject settingsPanel;
+   // [SerializeField]
+    //GameObject settingsPanel;
 
+    public static bool isPaused;
 
-    public void Pause()
+    void Start()
     {
-        pausePanel.SetActive(true);
-        settingsPanel.SetActive(false);
-        Time.timeScale = 0.0f;
+        pausePanel.SetActive(false);
     }
 
-    public void Home()
+    void Update()
     {
-        Debug.Log("Welcome scene");
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+    }
+
+
+    public void PauseGame()
+    {
+        pausePanel.SetActive(true);
+        Time.timeScale = 0.0F;
+        isPaused = true;
+    }
+
+    public void Home(string nombre)
+    {
+        SceneManager.LoadScene(nombre);
     }
 
     public void Resume()
     {
         pausePanel.SetActive(false);
-        settingsPanel.SetActive(true);
-        Time.timeScale = 1.0f;
+        Time.timeScale = 1.0F;
+        isPaused=false;
     }
 
     public void Reload()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1.0F;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

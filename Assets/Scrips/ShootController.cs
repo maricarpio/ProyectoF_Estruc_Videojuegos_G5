@@ -57,6 +57,7 @@ public class ShootController : MonoBehaviour
 
     void Update()
     {
+             
         if (Input.GetButtonUp("Fire2") && Time.time > _nextFireTime)
         {
             _nextFireTime = Time.time + 1.0F / fireRate;
