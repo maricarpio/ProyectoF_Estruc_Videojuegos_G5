@@ -53,6 +53,9 @@ public class Character2DController : MonoBehaviour
     float lostControlLifeTime = 1.0F;
 
 
+    float xInicial,yInicial;
+    
+
     private Rigidbody2D _rb;
 
     float _inputMovimiento;
@@ -71,8 +74,12 @@ public class Character2DController : MonoBehaviour
 
 
 
-
-     void Awake()
+    private void Start()
+    {
+        xInicial = transform.position.x;
+        yInicial = transform.position.y;
+    }
+    void Awake()
     {
         if (_instance == null)
         {
@@ -203,6 +210,11 @@ public class Character2DController : MonoBehaviour
         _canMove = true;
 
         animator.ResetTrigger("getHit");
+    }
+
+    public void Recolocar() 
+    {
+        transform.position = new Vector3(xInicial, yInicial, 0);
     }
   
 }
