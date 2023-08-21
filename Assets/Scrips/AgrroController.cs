@@ -17,8 +17,6 @@ public class AgrroController : MonoBehaviour
     Rigidbody2D rb2d;
 
 
-
-
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -65,6 +63,5 @@ public class AgrroController : MonoBehaviour
     {
         rb2d.velocity = new Vector2(0, 0);
     }
-
 
 }
