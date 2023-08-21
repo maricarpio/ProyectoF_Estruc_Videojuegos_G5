@@ -8,4 +8,9 @@ public class EventController : MonoBehaviour
     {
         MeleeController.Instance.onAttack.Invoke();
     }
+
+    public void OnFire()
+    {
+        ShootController.Instance.onFire.Invoke();   
+    }
 }
